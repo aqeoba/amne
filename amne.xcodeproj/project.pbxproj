@@ -17,8 +17,8 @@
 		E5AFDADD2694F670007F8F69 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDADC2694F670007F8F69 /* RegisterViewController.swift */; };
 		E5AFDADF2694F6C4007F8F69 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDADE2694F6C4007F8F69 /* PhotoViewerViewController.swift */; };
 		E5AFDAE12694F6D7007F8F69 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAE02694F6D7007F8F69 /* VideoPlayerViewController.swift */; };
-		E5AFDAE32694F710007F8F69 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAE22694F710007F8F69 /* NewConversationViewController.swift */; };
 		E5AFDAE52694F754007F8F69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAE42694F754007F8F69 /* ProfileViewController.swift */; };
+		E5AFDAE72694F8BB007F8F69 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAE62694F8BB007F8F69 /* NewConversationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		E5AFDADC2694F670007F8F69 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E5AFDADE2694F6C4007F8F69 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 		E5AFDAE02694F6D7007F8F69 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
-		E5AFDAE22694F710007F8F69 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		E5AFDAE42694F754007F8F69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E5AFDAE62694F8BB007F8F69 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 				E5AFDADC2694F670007F8F69 /* RegisterViewController.swift */,
 				E5AFDADE2694F6C4007F8F69 /* PhotoViewerViewController.swift */,
 				E5AFDAE02694F6D7007F8F69 /* VideoPlayerViewController.swift */,
-				E5AFDAE22694F710007F8F69 /* NewConversationViewController.swift */,
 				E5AFDAE42694F754007F8F69 /* ProfileViewController.swift */,
+				E5AFDAE62694F8BB007F8F69 /* NewConversationViewController.swift */,
 			);
 			path = CONTROLLERS;
 			sourceTree = "<group>";
@@ -205,11 +205,11 @@
 			files = (
 				E5AFDADB2694F639007F8F69 /* LoginViewController.swift in Sources */,
 				E5AFDADD2694F670007F8F69 /* RegisterViewController.swift in Sources */,
-				E5AFDAE32694F710007F8F69 /* NewConversationViewController.swift in Sources */,
 				E5AFDAC52694F2DD007F8F69 /* ConversationsViewController.swift in Sources */,
 				E5AFDAE12694F6D7007F8F69 /* VideoPlayerViewController.swift in Sources */,
 				E5AFDAC12694F2DD007F8F69 /* AppDelegate.swift in Sources */,
 				E5AFDAE52694F754007F8F69 /* ProfileViewController.swift in Sources */,
+				E5AFDAE72694F8BB007F8F69 /* NewConversationViewController.swift in Sources */,
 				E5AFDAC32694F2DD007F8F69 /* SceneDelegate.swift in Sources */,
 				E5AFDADF2694F6C4007F8F69 /* PhotoViewerViewController.swift in Sources */,
 			);

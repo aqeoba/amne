@@ -53,6 +53,10 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>PLEASE LET ME TAKE A PIC</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>PLEASE CHOOSE PROFILE PIC</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

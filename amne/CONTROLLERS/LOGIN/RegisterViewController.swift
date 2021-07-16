@@ -7,8 +7,11 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class RegisterViewController: UIViewController {
+    
+    private let spinner = JGProgressHUD(style: .dark)
 
     private let scrollView: UIScrollView = {
         let scrollview = UIScrollView()
@@ -101,7 +104,7 @@ class RegisterViewController: UIViewController {
 //                                                            action: #selector(didTapReg))
         
         regButton.addTarget(self,
-                              action: #selector(loginButtonTapped),
+                              action: #selector(regButtonTapped),
                               for: .touchUpInside)
         
         logField.delegate = self
@@ -164,7 +167,7 @@ class RegisterViewController: UIViewController {
                                    height: 42)
     }
 
-    @objc private func loginButtonTapped() {
+    @objc private func regButtonTapped() {
         
         logField.resignFirstResponder()
         passField.resignFirstResponder()
@@ -181,12 +184,18 @@ class RegisterViewController: UIViewController {
                 return
         }
         
+        spinner.show(in: view)
+        
         // firebase connection
         
         DataBaseManager.shared.userExistance(with: log, completion: { [weak self] exists in
             guard let strongSelf = self else {
                            return
                        }
+            
+            DispatchQueue.main.async {
+                strongSelf.spinner.dismiss()
+            }
 
                        guard !exists else {
                            // user already exists
@@ -236,7 +245,7 @@ extension RegisterViewController: UITextFieldDelegate {
             passField.becomeFirstResponder()
         }
         else if textField == passField {
-            loginButtonTapped()
+            regButtonTapped()
         }
         
         return true

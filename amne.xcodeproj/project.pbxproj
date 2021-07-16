@@ -10,7 +10,8 @@
 		855A76C82CF938B6F1507366 /* Pods_amne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62394FC1E2400AAEEACE12E5 /* Pods_amne.framework */; };
 		E5396CF22695C8D200A1E581 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5396CF12695C8D200A1E581 /* DataBaseManager.swift */; };
 		E5396CF42695CC0000A1E581 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5396CF32695CC0000A1E581 /* GoogleService-Info.plist */; };
-		E57D2CC226A1618800ACC185 /* RabbitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D2CC126A1618800ACC185 /* RabbitViewController.swift */; };
+		E57D2CC426A19DBA00ACC185 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D2CC326A19DBA00ACC185 /* ChatViewController.swift */; };
+		E57D2CC626A19DE000ACC185 /* RabbitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D2CC526A19DE000ACC185 /* RabbitViewController.swift */; };
 		E5AFDAC12694F2DD007F8F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAC02694F2DD007F8F69 /* AppDelegate.swift */; };
 		E5AFDAC32694F2DD007F8F69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAC22694F2DD007F8F69 /* SceneDelegate.swift */; };
 		E5AFDAC52694F2DD007F8F69 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFDAC42694F2DD007F8F69 /* ConversationsViewController.swift */; };
@@ -32,7 +33,8 @@
 		9BE111477458005B77FCDE2E /* Pods-amne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amne.release.xcconfig"; path = "Target Support Files/Pods-amne/Pods-amne.release.xcconfig"; sourceTree = "<group>"; };
 		E5396CF12695C8D200A1E581 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		E5396CF32695CC0000A1E581 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E57D2CC126A1618800ACC185 /* RabbitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitViewController.swift; sourceTree = "<group>"; };
+		E57D2CC326A19DBA00ACC185 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E57D2CC526A19DE000ACC185 /* RabbitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitViewController.swift; sourceTree = "<group>"; };
 		E5AFDABD2694F2DD007F8F69 /* amne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFDAC02694F2DD007F8F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AFDAC22694F2DD007F8F69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +122,8 @@
 				E5AFDAE02694F6D7007F8F69 /* VideoPlayerViewController.swift */,
 				E5AFDAE42694F754007F8F69 /* ProfileViewController.swift */,
 				E5AFDAE62694F8BB007F8F69 /* NewConversationViewController.swift */,
-				E57D2CC126A1618800ACC185 /* RabbitViewController.swift */,
+				E57D2CC326A19DBA00ACC185 /* ChatViewController.swift */,
+				E57D2CC526A19DE000ACC185 /* RabbitViewController.swift */,
 			);
 			path = CONTROLLERS;
 			sourceTree = "<group>";
@@ -292,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57D2CC226A1618800ACC185 /* RabbitViewController.swift in Sources */,
 				E5AFDADB2694F639007F8F69 /* LoginViewController.swift in Sources */,
 				E5396CF22695C8D200A1E581 /* DataBaseManager.swift in Sources */,
 				E5AFDADD2694F670007F8F69 /* RegisterViewController.swift in Sources */,
@@ -300,7 +302,9 @@
 				E5AFDAE12694F6D7007F8F69 /* VideoPlayerViewController.swift in Sources */,
 				E5AFDAC12694F2DD007F8F69 /* AppDelegate.swift in Sources */,
 				E5AFDAEA269503A1007F8F69 /* extensions.swift in Sources */,
+				E57D2CC626A19DE000ACC185 /* RabbitViewController.swift in Sources */,
 				E5AFDAE52694F754007F8F69 /* ProfileViewController.swift in Sources */,
+				E57D2CC426A19DBA00ACC185 /* ChatViewController.swift in Sources */,
 				E5AFDAE72694F8BB007F8F69 /* NewConversationViewController.swift in Sources */,
 				E5AFDAC32694F2DD007F8F69 /* SceneDelegate.swift in Sources */,
 				E5AFDADF2694F6C4007F8F69 /* PhotoViewerViewController.swift in Sources */,

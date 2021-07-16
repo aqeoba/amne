@@ -95,10 +95,10 @@ class RegisterViewController: UIViewController {
         title = "LOG IN"
         view.backgroundColor = .white
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "REG",
-                                                            style: .done,
-                                                            target: self,
-                                                            action: #selector(didTapReg))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "REG",
+//                                                            style: .done,
+//                                                            target: self,
+//                                                            action: #selector(didTapReg))
         
         regButton.addTarget(self,
                               action: #selector(loginButtonTapped),
@@ -185,27 +185,29 @@ class RegisterViewController: UIViewController {
         
         DataBaseManager.shared.userExistance(with: log, completion: { [weak self] exists in
             guard let strongSelf = self else {
-                return
-            }
-            
-            guard !exists else {
-                strongSelf.alertUserLognError(message: "LOOKS LIKE USER ALREADY EXISTS")
-                return
-            }
-        
-        
-        FirebaseAuth.Auth.auth().createUser(withEmail: log, password: pass,
-                                            completion: { authResult, error in
-                                                guard authResult != nil, error == nil else {
-                                                    print("ERROR CREATING USER")
-                                                    return
-                                                }
-                                                
-                                                DataBaseManager.shared.insertUser(with: chatAppUser(nickName: nickName, logIn: log))
-                                                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
-                                            })
-    })
-}
+                           return
+                       }
+
+                       guard !exists else {
+                           // user already exists
+                           strongSelf.alertUserLognError(message: "Looks like a user account for that email address already exists.")
+                           return
+                       }
+
+                       FirebaseAuth.Auth.auth().createUser(withEmail: log, password: pass, completion: { authResult, error in
+                           guard authResult != nil, error == nil else {
+                               print("Error creating user")
+                               return
+                           }
+
+
+
+//                           let chatUser = chatAppUser(nickName: nickName, logIn: log)
+                           DataBaseManager.shared.insertUser(with: chatAppUser(nickName: nickName, logIn: log))
+                           strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+                       })
+                   })
+               }
     
     func alertUserLognError(message: String = "INCORRECT REG INFO") {
         let alert = UIAlertController(title: "WHOOPS",
